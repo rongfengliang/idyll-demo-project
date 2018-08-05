@@ -1,18 +1,10 @@
-[meta title:"My Idyll Post" description:"Short description of your project" /]
+[meta title:"rongfengliang" description:"我的测试" /]
 
 [Header
-  title:"My Idyll Post"
-  subtitle:"Welcome to Idyll. Open index.idyll to start writing"
-  author:"Your Name Here"
+  title:"测试网站"
+  author:"rongfengliang"
   authorLink:"https://idyll-lang.org" /]
 
-This is an Idyll file. Write text
-as you please in here. To add interactivity,
-you can add  different components to the text.
-
-
-Here is how you can use a variable:
-
 [var name:"exampleVar" value:5 /]
 
 [Range min:0 max:10 value:exampleVar /]
@@ -22,27 +14,25 @@ Here is how you can use a variable:
 [var name:"exampleVar" value:5 /]
 
 [Range min:0 max:10 value:exampleVar /]
+
 [Display value:exampleVar /]
 ```
-
-And here is a custom component:
-
 [CustomComponent /]
-
 [CustomAppsComponent /]
 
-You can use standard html tags if a
-component with the same name
-doesn't exist.
+## 使用方法
 
-* *markdown* syntax is supported.
+* 安装
 
+```
+npm  install -g idyll
+```
 
-You can also load files from your `static/` directory.
-[img
-  src:'static/images/quill.svg'
-  style:`{ width: 75, display: 'block', margin: '30px auto' }`
-  /]
+* 构建&& 查看
+
+```
+idyll watch 
+```
 
 [Fixed]
 
